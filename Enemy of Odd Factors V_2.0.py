@@ -1,3 +1,14 @@
+#answer
+a=int(input())
+c=0
+l=[2,3,5,7,11,13,17,19]
+for i in l:
+    if(a%i==0):
+        c+=1
+print(2**c-1)
+
+
+
 #question
 In the previous Version of the question you did help to find whether the given number is enemy or a friend to the odd factor. Here we just go one step further and help find how many number which divide the given number are enemies of odd factors. A number is said to be enemy of the odd factor if the number itself is not having odd number of factors and none of the factors of the number(excluding 1) are having odd number of factors.
 
