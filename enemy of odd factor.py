@@ -1,6 +1,24 @@
+#1
 from math import sqrt as s
 a=int(input())
 if s(a)%1==0:
+    print("Enemy of Odd Factor")
+else:
+    print("Friend of Odd Factor")
+
+    
+#2
+from math import sqrt as s
+a=int(input())
+flag=0
+if s(a)%1!=0:
+    for i in range(2,a):
+        if(a%i==0 and s(i)%1==0):
+            flag=1
+            break
+else:
+    flag=1
+if flag==1:
     print("Enemy of Odd Factor")
 else:
     print("Friend of Odd Factor")
