@@ -1,3 +1,16 @@
+n=input()
+k=int(input())
+f=len(n)-k
+m=n.index(min(n[:f])
+g=n[m:]
+k=k-m
+g=list(g)
+for i in range(k):
+    g.remove(max(g))
+print("".join(g))
+
+
+
 
 #question
 Given a number 'N', print the least possibe number that could be formed by removing 'K' digits.(The order of the elements should not be altered)
