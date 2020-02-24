@@ -1,3 +1,18 @@
+#answer
+n,cap=map(int,input().split())
+l=list(map(int,input().split()))
+lit=0
+m=""
+for i in l:
+    lit+=i
+    k=lit//cap
+    lit-=(k*cap)
+    k%=10
+    m=m+str(k)
+print(m)
+
+
+
 #question
 6th june 1906, there was a big fire accident at a 5 star hotel in which more than 160 people died, from that time no one even dared to go near that burnt place, because it was believed that the place became haunted. This fear among people went increasing due to the suspecious deaths of the people who tried entering the hotel. Dhoni is a person who likes adventures, so wanted to see what actually is the mystery of the hotel. So on a friday evening he went inside the hotel with a camera which was live streamed live on his facebook page. The live stream lasted not even for an hour, all the electronic equipments he had began malfunctioning. He might be brave, but beinng alone in a place which is believed to be haunted and that too in late evening, his nerves got him. It was so quite so that, he could hear his own heart beat increasing as a drum roll. So he decided to exit the building, but the as you know what would happen next, the door was locked, he couldnt find another exit route. The fear in him has reached a peak, and to make it even more worse he could hear something rolling behind him. The rolling noise came near and near every second, and suddenly he felt something touching his feet. He turned around slow to see a small glass jar which has a paper inside it. He took the paper and read the note,
 
