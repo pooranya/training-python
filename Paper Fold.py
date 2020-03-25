@@ -17,6 +17,22 @@ Sample Input 0
 1 1
 
 Sample Output 0
-
 2
+
+******************************************************************************************************************
+#answer
+m=10**9
+def pow(n,a):
+    res=1
+    while(a!=0):
+        if(a&1):
+            res=(res*n)%m
+        a=(a>>1)
+        n=(n*n)%m
+    return res
+t,n=map(int,input().split())
+s=t*pow(2,n)
+print(s)
+
+
 
