@@ -21,3 +21,21 @@ Sample Output 0
 
 29
 
+******************************************************************************************************
+#answer
+MOD=1000000000 
+def po(x, n): 
+  result = 1; 
+  while (n): 
+    if (n & 1): 
+      result = result * x % MOD; 
+    n = int(n / 2); 
+    x = x * x % MOD; 
+  return result; 
+n,x=input().split() 
+n,x=int(n),int(x) 
+ls=list(map(int,input().split())) 
+res=0 
+for i in ls: 
+  res+=x*(po(2,i-1))-i 
+      print(res%MOD)
